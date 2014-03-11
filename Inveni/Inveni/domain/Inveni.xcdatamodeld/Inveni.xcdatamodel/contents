@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3396" systemVersion="12F45" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Configuracao" representedClassName="Configuracao" syncable="YES">
+        <attribute name="ultLatitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ultLongitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="Estabelecimento" representedClassName="Estabelecimento" syncable="YES">
+        <attribute name="endereco" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telefone" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tipo" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="TipoEstabelecimento" syncable="YES"/>
+    </entity>
+    <entity name="TipoEstabelecimento" representedClassName="TipoEstabelecimento" syncable="YES">
+        <attribute name="ativo" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idTipo" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Estabelecimento" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="TipoEstabelecimento" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Configuracao" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>
